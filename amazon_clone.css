@@ -1,0 +1,423 @@
+* {
+    margin: 0px;
+    font-family: "Trebuchet MS";
+    border: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    height: 60px;
+    background-color: #10151a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.border {
+    border: 1.5px solid transparent;
+    border-radius: 3px;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+    border-radius: 3px;
+}
+
+.logo {
+    background-image: url("./Assets/amazon_logo.png");
+    height: 50px;
+    width: 110px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.nav-location {
+    height: 50px;
+    width: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.location-logo {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.add-1 {
+    color: #cccccc;
+    font-size: 0.7rem;
+}
+
+.add-2 {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.search {
+    height: 40px;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.dropdown select{
+    height: 40px;
+    width: 50px;
+    color: rgb(84, 83, 83);
+    border-radius: 5px 0 0 5px;
+    border: 0px;
+    border-right: 1.5px solid gray;
+    background-color: rgb(237, 233, 233);
+    text-align: center;
+}
+
+.dropdown select:hover {
+    background-color: rgb(199, 196, 196);
+    color: rgb(27, 27, 27);
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.search-bar input{
+    height: 40px;
+    width: 100%;
+    padding: 0px;
+    padding-left: 5px;
+    border: 0px;
+    font-size: 1rem;
+}
+
+.search-logo {
+    height: 40px;
+    width: 50px;
+    background-color: rgb(253, 178, 65);
+    border-radius: 0 5px 5px 0;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.search-logo:hover {
+    opacity: 1;
+}
+
+.search-logo i {
+    padding: 8px 13px;
+}
+
+.lang {
+    height: 50px;
+    width: 40px;
+    padding-left: 15px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang i {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.lang select {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: transparent;
+    border: none;
+}
+
+.hello {
+    color: white;
+    height: 50px;
+    width: 130px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello-1 {
+    font-size: 0.8rem;
+}
+
+.hello-2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.orders {
+    width: 80px;
+}
+
+.cart {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-logo i {
+    font-size: 2rem;
+    color: white;
+}
+
+.cart p {
+    color: white;
+    margin-top: 15px;
+}
+
+
+
+/* MENU BAR */
+
+.menu-bar {
+    height: 40px;
+    background-color: rgb(32, 41, 53);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.menu-bar > p {
+    height: 20px;
+    padding: 10px 10px 10px;
+}
+
+.menu {
+    width: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 10px 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.menu i {
+    font-size: 1.1rem;
+}
+
+
+
+/* MAIN BODY */
+
+.main {
+    background-image: url("./Assets/bg_image.jpg");
+    background-size: cover;
+    width: 98.7%;
+    height: 625px;
+    margin: auto;
+}
+
+.cards {
+    width: 100%;
+    height: 300%;
+    /* background-color: yellow;
+    opacity: 0.3; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.cards > div {
+    height: 400px;
+    width: 350px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+#invis-card {
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+}
+
+.fashion {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.cards-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 100%;
+    height: 30px;
+    margin: 20px 20px 10px;
+}
+
+.fashion img {
+    height: 110px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.cards-price {
+    width: 150px;
+    height: 30px;
+    font-size: 0.75rem;
+}
+
+.cards-footer {
+    width: 100%;
+    height: 16px;
+    font-size: 0.85rem;
+    color: #007185;
+    font-weight:bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.gaming {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.gaming img {
+    height: 110px;
+    width: 175px;
+    object-fit: cover;
+}
+
+.home-products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.home-products img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.home-products .cards-heading {
+    height: 60px;
+}
+
+.cards .card-4 {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.sign-in {
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.sign-in-button {
+    width: 85%;
+    height: 20px;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    font-size: 0.9rem;
+    background-color: rgb(255, 225, 0);
+    border-radius: 10px;
+}
+
+.sign-in-image {
+    width: 100%;
+    height: 250px;
+}
+
+.sign-in-image img {
+    height: 250px;
+    width: 300px;
+    margin-left: 25px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.space img {
+    width: 150px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.toys {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.toys img {
+    width: 310px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.health {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.health img {
+    width: 310px;
+    height: 285px;
+    object-fit: cover;
+}
+
+.electronics {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.electronics img {
+    width: 350px;
+    height: 285px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* .cards2 {
+    width: 97.5%;
+    height: 200px;
+    background-color: white;
+    background-color: blue;
+    opacity: 0.3;
+    margin: auto;
+    margin-top: 20px;
+} */
